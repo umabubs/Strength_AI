@@ -1,0 +1,103 @@
+[
+  {
+    "id": "lat-pulldown",
+    "exercise": "pulldown",
+    "name": "Lat pulldown",
+    "hint": "Overhead cable and long bar above a seat with a thigh pad",
+    "alias": [
+      "lat pulldown",
+      "lat pull down",
+      "lat pull",
+      "lat pul"
+    ],
+    "visual": "a lat pulldown exercise machine, with a high overhead cable, wide pulldown bar, compact seat and thigh pads",
+    "image": "ua4.webp",
+    "animated": true,
+    "muscles": [
+      "Lats",
+      "Biceps",
+      "Upper back"
+    ],
+    "steps": [
+      "Adjust the thigh pad so it holds your thighs securely. Put both feet flat and choose an easy load.",
+      "Grip the bar and sit tall. Draw your elbows down and bring the bar toward your upper chest.",
+      "Let the bar rise under control. Avoid swinging or pulling behind your neck."
+    ],
+    "source": "https://experiencelife.lifetime.life/article/how-to-use-4-popular-strength-training-machines/"
+  },
+  {
+    "id": "sled-leg-press",
+    "exercise": "legpress",
+    "name": "45° leg press",
+    "hint": "Reclined seat and large footplate on angled rails",
+    "alias": [
+      "45 degree leg press",
+      "45 leg press",
+      "incline leg press",
+      "angled leg press"
+    ],
+    "visual": "a 45 degree inclined plate loaded leg press exercise machine with a large footplate on diagonal sled rails, a low reclined seat and weight plates",
+    "image": "la3.webp",
+    "animated": true,
+    "muscles": [
+      "Quadriceps",
+      "Glutes"
+    ],
+    "steps": [
+      "Check the safety stops and practise operating the catches with a light load. Place both feet flat on the platform.",
+      "Keep your back and hips against the pad as you lower the platform. Let your knees follow your toes.",
+      "Push through your whole foot, keeping a slight bend at the top. Secure both catches before stepping away."
+    ],
+    "source": "https://www.lifefitness.com/en-gb/catalog/strength-training/plate-loaded/plate-loaded-linear-leg-press"
+  },
+  {
+    "id": "seated-cable-row",
+    "exercise": "rowc",
+    "name": "Seated cable row",
+    "hint": "Low cable, horizontal seat or bench, and footrests",
+    "alias": [
+      "seated cable row",
+      "seated low row",
+      "low cable row",
+      "low row",
+      "seated row"
+    ],
+    "visual": "a seated low cable row exercise machine with a horizontal bench, footplates, and a low front pulley handle",
+    "image": "ua2.webp",
+    "animated": false,
+    "muscles": [
+      "Upper back",
+      "Lats",
+      "Biceps"
+    ],
+    "steps": [
+      "Place your feet on the footrests and adjust the seat if possible. Take the handle with your arms extended and knees softly bent.",
+      "Keep your torso steady and pull the handle toward your lower ribs. Let your elbows travel back close to your sides.",
+      "Return the handle slowly. Avoid jerking the cable or leaning back to finish the pull."
+    ],
+    "source": "https://www.hertssportsvillage.co.uk/news-how-to-use-the-equipment-in-our-gym-1474"
+  },
+  {
+    "id": "leg-extension",
+    "exercise": "extension",
+    "name": "Leg extension",
+    "hint": "Upright seat with a padded roller in front of the ankles",
+    "alias": [
+      "leg extension",
+      "knee extension",
+      "leg extensions"
+    ],
+    "visual": "a seated leg extension exercise machine with an upright padded chair and a shin roller for lifting the lower legs",
+    "image": "lb4.webp",
+    "animated": false,
+    "muscles": [
+      "Quadriceps"
+    ],
+    "steps": [
+      "Adjust the backrest so your knees line up with the machine's pivot. Position the roller just above your ankles.",
+      "Sit back against the seat and straighten your knees through a comfortable range with a light load.",
+      "Lower slowly and keep your hips against the seat. Avoid kicking the weight up."
+    ],
+    "source": "https://www.hertssportsvillage.co.uk/news-how-to-use-the-equipment-in-our-gym-1474"
+  }
+]

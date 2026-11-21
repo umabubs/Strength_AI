@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#18221d">
+  <title>My Strength AI</title>
+  <link rel="stylesheet" href="prototype.css">
+  <script src="tracker/motion-guides.js" defer></script>
+  <script src="prototype.js" defer></script>
+</head>
+<body>
+  <header class="top"><div class="shell top-inner"><a href="./" class="brand"><span class="mark" aria-hidden="true">MS</span>My Strength AI</a><a class="tracker-link" href="tracker/">Experimental tracker ↗</a></div></header>
+  <main class="shell">
+    <div class="intro">
+      <div class="eyebrow">MACHINE GUIDE · PROTOTYPE</div>
+      <h1>Scan. Learn. <em>Train.</em></h1>
+      <p>Photograph a machine, confirm the match and add the exercise to your experimental workout.</p>
+    </div>
+    <div class="workspace">
+      <section class="card scan" aria-labelledby="scan-title">
+        <h2 id="scan-title">Scan machine</h2>
+        <div id="photo-stage" class="photo-stage">
+          <div id="empty-photo" class="camera-frame" aria-hidden="true"><i></i><i></i><i></i><i></i><span>◎</span></div>
+          <img id="photo" alt="Selected machine photo" hidden>
+          <span id="photo-caption">Frame the whole machine in good light.</span>
+        </div>
+        <div class="actions">
+          <label class="button primary" for="capture">Take photo</label>
+          <input type="file" id="capture" class="visually-hidden" accept="image/*" capture="environment">
+          <label class="button quiet" for="upload">Choose photo</label>
+          <input type="file" id="upload" class="visually-hidden" accept="image/*">
+          <button type="button" id="sample" class="button quiet">Try an example</button>
+        </div>
+        <p id="scan-status" class="muted" role="status">Photos are processed in the prototype server’s memory and are never saved.</p>
+        <div id="suggestion"></div>
+      </section>
+      <section class="card learn" aria-labelledby="learn-title">
+        <h2 id="learn-title">Learn machine</h2>
+        <div id="guide">
+          <p class="muted">Confirm a scan or pick a machine to see its setup, muscles and demonstration.</p>
+          <div id="catalogue" class="catalogue"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

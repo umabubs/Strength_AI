@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>My Strength · Cache Repair</title>
+<style>:root{color-scheme:light dark}body{margin:0;background:#f3f5f9;color:#17263e;font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh;display:grid;place-items:center}.card{box-sizing:border-box;width:min(440px,calc(100% - 32px));background:white;padding:28px;border-radius:22px;box-shadow:0 10px 40px #17263e16}h1{font-size:23px;margin:0 0 12px}p{line-height:1.5}button{border:0;background:#153f56;color:white;border-radius:12px;font-size:17px;font-weight:700;padding:16px;width:100%;margin:12px 0;touch-action:manipulation}button:disabled{opacity:.6}small{color:#536478}#status{white-space:pre-wrap;font-size:14px;min-height:32px}@media(prefers-color-scheme:dark){body{background:#0e1724;color:#f4f7fb}.card{background:#1d2a3b}small{color:#c5d0df}}</style></head>
+<body><main class="card"><h1>My Strength · Refresh app</h1><p>This page fixes an iPhone loading an old version by removing the site's previous offline app cache and service worker.</p><p><strong>Your saved workout records will not be intentionally deleted.</strong> This repair does not clear localStorage or IndexedDB. However, back up your training history first if possible.</p><button id="fix">Repair old cache and open v3.3</button><p id="status" role="status" aria-live="polite"></p><small>Only use this on your own My Strength Tracker website. The Home Screen app may still need to be closed and reopened after repair.</small></main>
+<script>
+const b=document.getElementById('fix'),status=document.getElementById('status');
+b.addEventListener('click',async()=>{
+ b.disabled=true;status.textContent='Removing old app cache…';
+ try{
+  if('serviceWorker' in navigator){
+   const regs=await navigator.serviceWorker.getRegistrations();
+   for(const reg of regs){if(reg.scope===new URL('./',location.href).href)await reg.unregister()}
+  }
+  if('caches' in window){
+   const names=await caches.keys();
+   for(const name of names){if(/^my-strength-ai-/.test(name))await caches.delete(name)}
+  }
+  status.textContent='Old offline cache removed. Opening the current website…';
+  location.replace('./?repair='+Date.now());
+ }catch(e){status.textContent='Unable to complete repair: '+String(e)+'. Please try again in Safari.';b.disabled=false}
+});
+</script></body></html>
